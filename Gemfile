@@ -14,8 +14,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'twitter-bootstrap-rails'
 gem 'font-awesome-rails'
 gem 'simple_form'
-
-
+gem 'devise'
+gem 'gravatarify'
 
 group :development, :test do
   gem 'jazz_fingers'
