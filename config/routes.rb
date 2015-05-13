@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   resources :places
   devise_for :users, controllers: { registrations: "registrations" }
+  resources :reviews
 
   root 'pages#home'
   
