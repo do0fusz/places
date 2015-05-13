@@ -16,6 +16,7 @@ gem 'font-awesome-rails'
 gem 'simple_form'
 gem 'devise'
 gem 'gravatarify'
+gem 'geocoder'
 
 group :development, :test do
   gem 'jazz_fingers'
