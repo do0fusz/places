@@ -8,3 +8,31 @@
   width: 200px; 
   margin-left: 100px;  
 }
+
+.landing_title{
+  padding-top: 230px; 
+}
+
+.landing {
+  background: image-url("background.jpg") no-repeat center center fixed; 
+  -webkit-webkit-background-size: cover ;
+  -moz-webkit-background-size: cover;
+  -ms-webkit-background-size: cover;
+  -o-webkit-background-size: cover ;
+  height: 100vh ; 
+}
+
+.navbar{
+  margin-bottom: 0px; 
+}
+
+.btn-landing{
+  color: white; 
+  background: none; 
+  border: solid; 
+  &:hover{
+    color: grey; 
+    border-color: grey; 
+    background: none; 
+  }
+}
