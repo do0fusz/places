@@ -1,5 +1,5 @@
-class AddTotalAverageRatingToPlaces < ActiveRecord::Migration
+class AddTotalAvarageRatingToPlaces < ActiveRecord::Migration
   def change
-    add_column :places, :total_average, :integer, default: 0
+    add_column :places, :total_avarage, :integer, default: 0
   end
 end
