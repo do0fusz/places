@@ -7,6 +7,7 @@
       <th>Address</th>
       <th>Phone</th>
       <th>Website</th>
+      <th>Score:</th>
     </tr>
   </thead>
 
@@ -17,6 +18,7 @@
         <td><%= place.address %></td>
         <td><%= place.phone %></td>
         <td><%= place.website %></td>
+        <td><div class="average_<%= place.id %>"></div></td>
       </tr>
     <% end %>
   </tbody>
@@ -24,3 +26,14 @@
 
 <br>
 
+
+<script type="text/javascript">
+  <% @places.each do |place| %>
+    $(".average_<%= place.id %>").raty({
+      starOn: "<%= image_path('star-on.png') %>",
+      starOff: "<%= image_path('star-off.png') %>",
+      score: <%= place.avarage_rating %>,
+      readOnly: true 
+    });
+  <% end %>
+</script>
